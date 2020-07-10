@@ -1,5 +1,4 @@
 def digitsProduct(product):
-
     answerDigits = []
     answer = 0
 
@@ -17,9 +16,9 @@ def digitsProduct(product):
     if product > 1:
         return answer - 1
 
-
     for i in range(len(answerDigits) - 1, -1, -1):
         answer = 10 * answer + answerDigits[i]
     return answer
 
-print(digitsProduct(243))# 12 - 26  #450-2559  243-399
+
+print(digitsProduct(243))  # 12 - 26  #450-2559  243-399

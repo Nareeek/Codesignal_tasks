@@ -1,4 +1,6 @@
 d = {}
+
+
 def concat_elem_sum(array, element):
     sum = 0
     if element not in d:
@@ -16,5 +18,5 @@ def concatenationsSum(a):
         s.append(concat_elem_sum(a, str(a[i])))
     return sum(s)
 
-    
-print(concatenationsSum([10,2]))
+
+print(concatenationsSum([10, 2]))

@@ -1,9 +1,8 @@
 def quickSort(a, l, r):
-
     if l >= r:
         return a
 
-    x = a[l] # barrier element
+    x = a[l]  # barrier element
     i = l
     j = r
 
@@ -14,7 +13,7 @@ def quickSort(a, l, r):
             j -= 1
         if i <= j:
             a[i], a[j] = a[j], a[i]
-            
+
             i += 1
             j -= 1
 

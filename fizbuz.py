@@ -4,7 +4,8 @@ def fizzbuzz(n):
             return "fizz"
         else:
             return "fizzbuzz"
-    
-    return "buzz" if n % 5 else n  
+
+    return "buzz" if n % 5 else n
+
 
 print(fizzbuzz(15))

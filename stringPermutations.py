@@ -1,5 +1,6 @@
 from itertools import permutations as per
 
+
 def stringPermutations(s):
     s = list(s)
     s.sort()
@@ -11,5 +12,6 @@ def stringPermutations(s):
     for i in range(len(s)):
         S.append("".join(s[i]))
     return S
+
 
 print(stringPermutations("ABA"))

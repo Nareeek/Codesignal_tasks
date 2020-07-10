@@ -43,3 +43,4 @@ print(hashMap(["insert",
                         [2],
                         [1],
                         [3]]))
+print()

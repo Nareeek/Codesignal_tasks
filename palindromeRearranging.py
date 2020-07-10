@@ -5,7 +5,8 @@ def palindromeRearranging(inp):
             q += 1
             if q == 2:
                 return False
-        
+
     return True
+
 
 print(palindromeRearranging("abbcabb"))

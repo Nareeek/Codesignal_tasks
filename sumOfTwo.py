@@ -13,3 +13,4 @@ b = [10, 20, 30, 40]
 v = 42
 
 print(sumOfTwo(a, b, v))
+print()

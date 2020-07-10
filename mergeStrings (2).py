@@ -28,6 +28,6 @@ def mergeStrings(s1, s2):
             break
     t = "".join(t)
     return t
-            
-            
-print(mergeStrings("ougtaleegvrabhugzyx","wvieaqgaegbxg"))
+
+
+print(mergeStrings("ougtaleegvrabhugzyx", "wvieaqgaegbxg"))

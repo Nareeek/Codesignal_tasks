@@ -5,4 +5,5 @@ def chessBoardCellColor(cell1, cell2):
         return True
     return False
 
+
 print(chessBoardCellColor("A1", "C3"))

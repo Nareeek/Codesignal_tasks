@@ -1,5 +1,6 @@
 from collections import defaultdict
 
+
 def swapLexOrder(strng, pairs):
     sets = find_connected_sets(pairs)
     char_order = {}
@@ -14,6 +15,7 @@ def swapLexOrder(strng, pairs):
             largest.append(strng[i])
 
     return ''.join(largest)
+
 
 def find_connected_sets(pairs):
     connections = defaultdict(list)
@@ -53,15 +55,15 @@ def insert_jointed_set(sets, s):
             return
     sets.append(s)
 
+
 def get_char_locations(idx_set, strng):
-    
     order = {}
     chars = []
-    locs = [i-1 for i in idx_set]
-    
+    locs = [i - 1 for i in idx_set]
+
     for i in locs:
         chars.append(strng[i])
-    
+
     chars.sort(reverse=True)
     locs.sort()
 
@@ -70,4 +72,4 @@ def get_char_locations(idx_set, strng):
     return order
 
 
-print(swapLexOrder("abdc", [[1,4],[3,4]]))
+print(swapLexOrder("abdc", [[1, 4], [3, 4]]))

@@ -9,4 +9,5 @@ def isSumOfConsecutive(n):
             return True
     return False
 
+
 print(isSumOfConsecutive(42))

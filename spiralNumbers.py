@@ -1,5 +1,4 @@
 def direction(List, row, column, tiv, direction):
-    
     if direction == "left_Right":
         while column < (len(List[row]) - 1):
             if List[row][column + 1] == 0:
@@ -46,7 +45,8 @@ def spiralNumbers(n):
         t, r, c = direction(l, r, c, t, "up_Down")
         t, r, c = direction(l, r, c, t, "right_Left")
         t, r, c = direction(l, r, c, t, "down_Up")
-        
+
     return l
+
 
 print(spiralNumbers(10))

@@ -1,6 +1,7 @@
 def amendTheSentence(s):
-    s = list(s); a = []  
-    
+    s = list(s);
+    a = []
+
     for i in range(len(s)):
         if s[i].isupper():
             a.append(i)
@@ -13,11 +14,13 @@ def amendTheSentence(s):
     while i < len(a):
         if a[i] != 0:
             ss.insert(a[i] + j, ".")
-            j += 1; i += 1
+            j += 1;
+            i += 1
         else:
-            j += 1; i += 1
+            j += 1;
+            i += 1
 
     return " ".join("".join(ss).split("."))
 
+
 print(amendTheSentence("codesignalIsAwesome"))
-    

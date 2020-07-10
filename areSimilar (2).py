@@ -8,7 +8,7 @@ def areSimilar(a, b):
     v = list(d.values())
     k = list(d.keys())
     q = 0
-    
+
     print(v)
     print(k)
     for i in range(len(v)):
@@ -19,7 +19,8 @@ def areSimilar(a, b):
                         q += 1
                     else:
                         break
-    
+
     return q
 
-print(areSimilar([4, 6, 3],[3, 4, 6]))
+
+print(areSimilar([4, 6, 3], [3, 4, 6]))

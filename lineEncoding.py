@@ -8,4 +8,5 @@ def lineEncoding(s):
 
     return "".join(l)
 
+
 print(lineEncoding("wwwwwwwawwwwwww"))

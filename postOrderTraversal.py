@@ -5,7 +5,8 @@ class Node:
         self.left = None
         self.right = None
         self.data = data
-# Insert Node
+
+    # Insert Node
     def insert(self, data):
 
         if self.data:
@@ -22,16 +23,16 @@ class Node:
         else:
             self.data = data
 
-# Print the Tree
+    # Print the Tree
     def PrintTree(self):
         if self.left:
             self.left.PrintTree()
-        print( self.data),
+        print(self.data),
         if self.right:
             self.right.PrintTree()
 
-# Postorder traversal
-# Left ->Right -> Root
+    # Postorder traversal
+    # Left ->Right -> Root
     def PostorderTraversal(self, root):
         res = []
         if root:
@@ -39,6 +40,7 @@ class Node:
             res = res + self.PostorderTraversal(root.right)
             res.append(root.data)
         return res
+
 
 root = Node(27)
 root.insert(14)

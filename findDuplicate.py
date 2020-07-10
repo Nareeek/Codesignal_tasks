@@ -13,7 +13,8 @@ def findDuplicate(nums):
     while ptr1 != ptr2:
         ptr1 = nums[ptr1]
         ptr2 = nums[ptr2]
-    
+
     return ptr1
 
-print(findDuplicate([6,3,1,3,4,2,5,7]))
+
+print(findDuplicate([6, 3, 1, 3, 4, 2, 5, 7]))

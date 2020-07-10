@@ -4,11 +4,13 @@ class ListNode(object):
         self.value = x
         self.next = None
 
+
 def isListPalindrome(l):
     a = []
     while l != None:
         a.append(l.value)
         l = l.next
     return a == a[::-1]
+
 
 print(isListPalindrome([1, 0, 1]))

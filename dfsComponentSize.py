@@ -1,5 +1,4 @@
 def dfsComponentSize(matrix, vertex):
-
     def dfs(currentVertex, visited):
         componentSize = dfs(currentVertex, visited)
         for nextVertex in range(len(matrix)):

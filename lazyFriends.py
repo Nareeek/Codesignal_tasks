@@ -6,7 +6,7 @@ def lazyFriends(houses, maxDist):
         while houses[i] - houses[l] > maxDist:
             l += 1
         while (r + 1 < len(houses)
-                and houses[r + 1] - houses[i] <= maxDist):
+               and houses[r + 1] - houses[i] <= maxDist):
             r += 1
         ans.append(r - l)
     return ans

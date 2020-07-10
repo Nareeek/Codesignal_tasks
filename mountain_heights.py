@@ -19,6 +19,7 @@ while True:
     for key, value in result_dictionary.items():
         if value == max(mountain_heights):
             print(key)
+            print()
     # Write an action using print
 
     # To debug: print("Debug messages...", file=sys.stderr)

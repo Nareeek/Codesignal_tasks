@@ -1,21 +1,20 @@
 def candles1(candlesNumber, makeNew):
     n = candlesNumber
     m_N = makeNew
-    
+
     s = 0
     left = 0
-    
+
     while n > 0:
         s += n
         if left // m_N:
             s += 1
             left %= m_N
-            
+
         left += n % m_N
         n //= m_N
-    
+
     return s
-     
 
 
 def candles2(candlesNumber, makeNew):

@@ -13,7 +13,7 @@ def FindIntersection(strArr):
             a1.append(a[i] + a[i + 1])
             i += 2
         else:
-            i += 1       
+            i += 1
         if b[j].isdigit() and not b[j + 1].isdigit():
             b1.append(b[j])
             j += 1
@@ -35,11 +35,8 @@ def FindIntersection(strArr):
             j = i
             i += 1
     strArr = ",".join(c)
-            
+
     return strArr
-    
-    
-    
-    
-    
+
+
 print(FindIntersection(["1, 3, 4, 7, 13", "1, 2, 4, 13, 15"]))

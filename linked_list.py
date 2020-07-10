@@ -3,6 +3,7 @@ class Node:
         self.dataval = dataval
         self.nextval = None
 
+
 class SLinkedList:
     def __init__(self):
         self.headval = None
@@ -10,8 +11,9 @@ class SLinkedList:
     def listprint(self):
         printval = self.headval
         while printval is not None:
-            print (printval.dataval)
+            print(printval.dataval)
             printval = printval.nextval
+
 
 list = SLinkedList()
 list.headval = Node("Mon")

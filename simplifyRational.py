@@ -8,6 +8,8 @@ def counter(number):
         else:
             i += 1
     return a
+
+
 def simplifyRational(numerator, denominator):
     a = counter(numerator)
     b = counter(denominator)
@@ -34,7 +36,8 @@ def simplifyRational(numerator, denominator):
     if denominator < 0:
         p2 *= -1
     return [p1, p2] if p2 > 0 else [-p1, -p2]
-        
+
+
 print(simplifyRational(5235, 1495))
 
 print(simplifyRational(8, -5))

@@ -1,5 +1,6 @@
 import random
 from time import sleep
+
 str = ("Guess the number between 1 to 100")
 print(str.center(80))
 sleep(2)

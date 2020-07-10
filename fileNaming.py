@@ -9,7 +9,7 @@ def fileNaming(names):
                     q += 1
                 else:
                     break
-                    
+
             names[i] += "(" + str(q + 1) + ")"
             i += 1
         else:
@@ -17,12 +17,12 @@ def fileNaming(names):
     return names
 
 
-print(fileNaming(["dd", 
- "dd(1)", 
- "dd(2)", 
- "dd", 
- "dd(1)", 
- "dd(1)(2)", 
- "dd(1)(1)", 
- "dd", 
- "dd(1)"]))
+print(fileNaming(["dd",
+                  "dd(1)",
+                  "dd(2)",
+                  "dd",
+                  "dd(1)",
+                  "dd(1)(2)",
+                  "dd(1)(1)",
+                  "dd",
+                  "dd(1)"]))

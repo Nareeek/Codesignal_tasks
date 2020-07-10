@@ -9,4 +9,5 @@ def sortedSquaredArray(array):
 
     return out_array
 
+
 print(sortedSquaredArray([-6, -4, 1, 2, 3, 5]))

@@ -11,4 +11,5 @@ def absoluteValuesSumMinimization(a):
         m = min(i, m)
     return d, m
 
+
 print(absoluteValuesSumMinimization([2, 4, 7]))

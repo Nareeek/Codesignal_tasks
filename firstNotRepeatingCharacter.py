@@ -5,18 +5,5 @@ def firstNotRepeatingCharacter(a):
             L[a.index(chr(i))] = chr(i)
     return "_" if len(L) == 0 else L[min(L)]
 
+
 print(firstNotRepeatingCharacter("abddfgtgadesdgvb"))
-        
-
-
-
-
-
-
-
-
-
-
-
-
-

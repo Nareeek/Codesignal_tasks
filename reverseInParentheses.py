@@ -5,12 +5,13 @@ def reverseInParentheses(s):
             tmp = ""
             while stack[-1] != "(":
                 tmp += stack.pop()
-            stack.pop() # pop the (
+            stack.pop()  # pop the (
             for item in tmp:
                 stack.append(item)
         else:
             stack.append(x)
 
     return "".join(stack)
+
 
 print(reverseInParentheses("foo(bar(baz))blim"))

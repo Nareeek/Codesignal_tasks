@@ -8,5 +8,6 @@ def depositProfit(deposit, rate, threshold):
             q += 1
         elif s >= threshold:
             return q
-        
+
+
 print(depositProfit(100, 1, 101))

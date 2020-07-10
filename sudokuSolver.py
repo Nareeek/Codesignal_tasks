@@ -14,7 +14,6 @@ print(np.matrix(grid))
 
 
 def possible(y, x, n):
-
     global grid
 
     for i in range(0, 9):
@@ -33,10 +32,10 @@ def possible(y, x, n):
             if grid[y0 + i][x0 + j] == n:
                 return False
     return True
-        
 
-print(possible(4,4,3))
-print(possible(4,4,5))
+
+print(possible(4, 4, 3))
+print(possible(4, 4, 5))
 
 
 def solve():
@@ -54,5 +53,6 @@ def solve():
 
     print(np.matrix(grid))
     input("More?")
+
 
 solve()

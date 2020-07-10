@@ -1,5 +1,4 @@
 def chessBoardSquaresUnderQueenAttack(a, b):
-
     def go(x, y, dx, dy):
         if x < 0 or x >= a or y < 0 or y >= b:
             return 0
@@ -12,6 +11,6 @@ def chessBoardSquaresUnderQueenAttack(a, b):
             for dx in range(-1, 2):
                 for dy in range(-1, 2):
                     if dx != 0 or dy != 0:
-                        res += go(i+dx,j+dy,dx,dy)
+                        res += go(i + dx, j + dy, dx, dy)
 
     return res

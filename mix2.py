@@ -2,7 +2,7 @@ white = []
 black = []
 letters = "ABCDEFGH"
 digits = "12345678"
-    
+
 i = 0
 j = 0
 

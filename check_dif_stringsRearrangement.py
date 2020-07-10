@@ -21,10 +21,10 @@ def stringsRearrangement(inp):
     l = []
     for i in all_possible_ways(inp):
         l.append(check_dif(i))
-    return len(inp)- 1 in l
+    return len(inp) - 1 in l
 
 
-print(stringsRearrangement(["abc", 
- "abx", 
- "axx", 
- "abc"]))
+print(stringsRearrangement(["abc",
+                            "abx",
+                            "axx",
+                            "abc"]))

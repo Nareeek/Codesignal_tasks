@@ -6,7 +6,7 @@ class Node:
         self.right = None
         self.data = data
 
-# Insert method to create nodes
+    # Insert method to create nodes
     def insert(self, data):
 
         if self.data:
@@ -22,26 +22,27 @@ class Node:
                     self.right.insert(data)
         else:
             self.data = data
-# findval method to compare the value with nodes
+
+    # findval method to compare the value with nodes
     def findval(self, lkpval):
         if lkpval < self.data:
             if self.left is None:
-                return str(lkpval)+" Not Found"
+                return str(lkpval) + " Not Found"
             return self.left.findval(lkpval)
         elif lkpval > self.data:
             if self.right is None:
-                return str(lkpval)+" Not Found"
+                return str(lkpval) + " Not Found"
             return self.right.findval(lkpval)
         else:
             print(str(self.data) + ' is found')
-# Print the tree
+
+    # Print the tree
     def PrintTree(self):
         if self.left:
             self.left.PrintTree()
-        print( self.data),
+        print(self.data),
         if self.right:
             self.right.PrintTree()
-            
 
 
 root = Node(12)

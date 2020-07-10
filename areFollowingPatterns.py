@@ -1,5 +1,4 @@
 def areFollowingPatterns(strings, patterns):
-
     hash1 = dict()
     hash2 = dict()
 
@@ -19,4 +18,5 @@ def areFollowingPatterns(strings, patterns):
 
     return True
 
-print(areFollowingPatterns(["a","b","a", "a", "c"], ["a","b","a", "c", "a"]))
+
+print(areFollowingPatterns(["a", "b", "a", "a", "c"], ["a", "b", "a", "c", "a"]))

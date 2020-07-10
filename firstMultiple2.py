@@ -5,6 +5,5 @@ def firstMultiple2(divisors, start):
                 return start
         start += 1
 
+
 print(firstMultiple2([5, 6], 62))
-        
-        

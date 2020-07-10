@@ -5,4 +5,5 @@ def palindromeRearranging(inp):
 
     return sum(a) <= 1
 
+
 print(palindromeRearranging("abbcabb"))

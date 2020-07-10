@@ -10,3 +10,4 @@ def mutateTheArray(n, a):
             return b
         else:
             b.append(a[i - 1] + a[i] + a[i + 1])
+            print()

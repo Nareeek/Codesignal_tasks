@@ -1,6 +1,6 @@
 def largestDistance(a):
     Max = 0
-    
+
     for i in range(len(a)):
         for j in range(len(a)):
             if i != j:

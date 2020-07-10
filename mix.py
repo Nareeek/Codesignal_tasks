@@ -17,15 +17,11 @@ for x in range(1, len(matrix) - 1):
     for y in range(1, len(matrix[0]) - 1):
         b[x][y] = matrix[x - 1][y - 1] + matrix[x - 1][y] + matrix[x - 1][y + 1] + matrix[x][y - 1] + matrix[x][y + 1] + \
                   matrix[x + 1][y - 1] + matrix[x + 1][y] + matrix[x + 1][y + 1]
-        
+
 del b[0]
 del b[-1]
 for i in b:
     del i[0]
     del i[-1]
-    
-print(*b, sep = "\n")
 
-
-
-
+print(*b, sep="\n")

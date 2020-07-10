@@ -11,4 +11,5 @@ def areSimilar(a, b):
                     a[i], a[j + 1] = a[j + 1], a[i]
     return False
 
+
 print(areSimilar([1, 2, 2], [2, 1, 1]))

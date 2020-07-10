@@ -1,5 +1,4 @@
 def quickSort(a, l, r):
-
     if l >= r:
         return a
 

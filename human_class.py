@@ -3,8 +3,10 @@ class Mard:
         self.anun = anun
         self.azganun = azganun
         self.tariq = tariq
+
     def __str__(self):
         return "{} {} {}".format(self.anun, self.azganun, self.tariq)
+
 
 Narek = Mard("Narek", "Ikhtiaryan", "27")
 

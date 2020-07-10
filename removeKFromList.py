@@ -24,6 +24,7 @@ assert numpy
 assert pandas
 '''
 
+
 class ListNode(object):
     _slots_ = ('value', 'next')
 
@@ -55,5 +56,6 @@ def removeKFromList(l, k):
         else:
             c = c.next
     return l.next if l and l.value == k else l
+
 
 print(removeKFromList([1, 2, 3, 4, 5, 6, 7], 10))

@@ -11,7 +11,8 @@ def stringsRearrangement(inp):
             return True
     return False
 
-print(stringsRearrangement(["abc", 
- "abx", 
- "axx", 
- "abc"]))
+
+print(stringsRearrangement(["abc",
+                            "abx",
+                            "axx",
+                            "abc"]))

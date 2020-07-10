@@ -10,4 +10,5 @@ def spiralNumbers(n):
             c += 1
     return m
 
+
 print(spiralNumbers(5))

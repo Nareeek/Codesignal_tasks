@@ -7,4 +7,4 @@ def possibleSums(coins, quantity):
     return len(possible_sums) - 1
 
 
-print(possibleSums([10, 50, 100],[1, 2, 1]))
+print(possibleSums([10, 50, 100], [1, 2, 1]))

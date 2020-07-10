@@ -1,6 +1,6 @@
 def alternatingSort(a):
-    a1 = a[: len(a)//2]
-    a2 = a[len(a)//2: ]
+    a1 = a[: len(a) // 2]
+    a2 = a[len(a) // 2:]
     a2.reverse()
     a3 = []
     b = []
@@ -15,8 +15,8 @@ def alternatingSort(a):
     for i in range(len(a1)):
         b.append(a1[i])
         b.append(a2[i])
-    
+
     if len(a3) != 0:
         b.append(a3[0])
-    
+
     return sorted(set(b)) == b

@@ -12,6 +12,6 @@ def almostIncreasingSequence(s):
             q += 1
     print(q)
     return q == 1
-    
+
 
 print(almostIncreasingSequence([0, -2, 5, 6]))

@@ -1,3 +1,4 @@
+# 1
 def insert(value: list, dic: dict):
     dic[value[0]] = value[1]
     return
@@ -32,6 +33,43 @@ def hashMap(queryType, query):
             get_sum += get(query[i], d)
 
     return get_sum
+
+
+# 2
+def hashMap(queryType, query):
+    a = []
+    get = 0
+
+    for (i, j) in zip(queryType, query):
+
+        if i == "insert":
+            if j[0] < 0 and abs(j[0]) > len(a):
+                a = [0] * ((-j[0]) - len(a)) + a
+                a[j[0]] = j[1]
+
+            elif j[0] <= len(a):
+                a.insert(j[0], j[1])
+            elif j[0] >= 0:
+                a = [0] * j[0] + a
+                a[j[0]] = j[1]
+
+        elif i == "addToKey":
+            if j[0] >= 0:
+                a = [0] * j[0] + a
+            else:
+                a = a[-j[0]:] + a[:-j[0]]
+
+        elif i == "addToValue":
+            a = list(map(lambda x: x + j[0], a))
+
+        elif i == "get":
+            if j[0] < 0:
+                if abs(j[0]) < len(a):
+                    get += a[j[0]]
+            elif j[0] <= len(a):
+                get += a[j[0]]
+
+    return get
 
 
 print(hashMap(["insert",

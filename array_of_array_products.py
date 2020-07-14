@@ -1,6 +1,6 @@
 def array_of_array_products(arr):
     length = len(arr)
-    if (length == 0) or (length == 1):
+    if length == 0 or length == 1:
         return []
 
     productArr = []
@@ -11,6 +11,7 @@ def array_of_array_products(arr):
         product *= arr[i]
 
     product = 1
+    print(productArr)
 
     for i in range(length - 1, -1, -1):
         productArr[i] *= product
@@ -19,4 +20,6 @@ def array_of_array_products(arr):
     return productArr
 
 
-print(array_of_array_products([2, 2]))
+print(array_of_array_products([8, 10, 2]))
+print()
+print(array_of_array_products([2, 7, 3, 4]))

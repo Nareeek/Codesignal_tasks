@@ -1,8 +1,8 @@
-from fractions import gcd
+import math
 
 
 def modInverse(n, m):
-    if gcd(n, m) != 1:
+    if math.gcd(n, m) != 1:
         return -1
     x1, x2, y1, y2, _m = 1, 0, 0, 1, m
     while m:

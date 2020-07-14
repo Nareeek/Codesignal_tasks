@@ -20,3 +20,6 @@ def alternatingSort(a):
         b.append(a3[0])
 
     return sorted(set(b)) == b
+
+
+print(alternatingSort([1, 4, 5, 6, 3]))

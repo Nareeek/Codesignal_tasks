@@ -1,5 +1,3 @@
-import time
-
 a = list(range(1000)) * 10 + list(range(1000, 0, -1)) * 10
 print(len(a))
 sum = 0

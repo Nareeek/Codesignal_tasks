@@ -1,2 +1,4 @@
-# Codesignal_tasks
-Various tasks and their solutions from the codesignal.com
+# Python tutorials & codesignal tasks.
+
+Various tasks and their solutions from codesignal.com
+Lot of Python tutorial files.

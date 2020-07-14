@@ -1,3 +1,7 @@
+import itertools as it
+
+print(it.Predicate(__doc__))
+
 white = []
 black = []
 letters = "ABCDEFGH"
@@ -18,3 +22,8 @@ while j < 8:
     i = 0
 
 print(black)
+
+for v, u, w in (1, 2, 3), (4, 5, 6):
+    print(v)
+    print(u)
+    print(w)

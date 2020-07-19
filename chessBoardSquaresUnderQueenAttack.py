@@ -1,4 +1,5 @@
 def chessBoardSquaresUnderQueenAttack(a, b):
+
     def go(x, y, dx, dy):
         if x < 0 or x >= a or y < 0 or y >= b:
             return 0

@@ -47,9 +47,10 @@ def spiralMatrixPrint(row, col, arr):
 # Driver code
 # Change the following array and the corresponding row and
 # column arguments to test on some other input
-array = [[1,2,3,4],
-         [12,13,14,5],
-         [11,16,15,6],
-         [10,9,8,7]]
+array = [[33,29,-15,-20,-41,-1,34,20,-41,44], 
+ [14,-11,-27,-35,29,-14,34,-41,49,19], 
+ [-12,-44,44,-43,-13,-6,40,-24,-6,8], 
+ [-40,4,27,2,2,15,38,4,-13,15], 
+ [-42,3,5,10,15,34,-18,-22,9,38]]
+spiralMatrixPrint(10, 5, array)
 
-spiralMatrixPrint(4, 4, array)

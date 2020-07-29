@@ -23,4 +23,6 @@ def quickSort(a, l, r):
     return a
 
 
-print(quickSort([5, 2, 1, 7, 5, 3, 2, 3], 0, 3))
+print("start")
+quickSort(list(range(10000))[::-1], 0, len(list(range(10000))) - 1)
+print("end")

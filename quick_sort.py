@@ -1,3 +1,8 @@
+from datetime import datetime
+import timeit, time
+
+
+
 def quickSort(a, l, r):
     if l >= r:
         return a
@@ -24,5 +29,18 @@ def quickSort(a, l, r):
 
 
 print("start")
-quickSort(list(range(10000))[::-1], 0, len(list(range(10000))) - 1)
+start_time = time.clock()
+start1 = timeit.default_timer()
+start2 = datetime.now()
+
+quickSort(list(range(10000))[10000:5000:-2], 0, len(list(range(10000))[1000:5000:2]) - 1)
+
+stop1 = timeit.default_timer()
+stop2 = datetime.now() - start2
+
+print('Time1: ', stop1 - start1) 
+print('Time2: ', stop2)
+
+print(time.clock() - start_time, " :seconds")
+
 print("end")

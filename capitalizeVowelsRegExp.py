@@ -6,3 +6,7 @@ def capitalizeVowelsRegExp(input):
             inp[i] = inp[i].upper()
             
     return "".join(inp)
+
+
+#2
+return re.sub('[aeyuio]', lambda a: a[0].upper(), *eval(dir()[0]))

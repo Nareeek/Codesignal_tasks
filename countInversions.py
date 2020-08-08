@@ -16,3 +16,4 @@ def merge(left, right):
       res += [right.pop(0)]
       invs += len(left)
   return res + left + right, invs
+

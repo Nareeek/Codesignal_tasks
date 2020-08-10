@@ -31,3 +31,17 @@ def Kadane(arr,n):
   
 arr = [-2,1,-3,7,-2,2,1,-5,4]
 print(Kadane(arr, len(arr)))
+
+
+
+#3
+def maxSubarray(inputArray):
+    t = 0
+    res = 0
+    for i in inputArray:
+        if t+i>=0:
+            t+=i
+        else:
+            t=0
+        res = max(res, t)
+    return res

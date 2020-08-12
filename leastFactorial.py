@@ -1,9 +1,7 @@
 def leastFactorial(n):
-    f = 1
-    i = 2
-
-    while f < n:
-        f *= i
-        i += 1
-        
-    return f
+    p = 1
+    k = 1
+    while p < n:
+        k += 1
+        p *= k
+    return p

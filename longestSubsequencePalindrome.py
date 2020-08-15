@@ -1,3 +1,4 @@
+# 1
 def longestSubsequencePalindrome(a):
     n = len(a)
 
@@ -21,5 +22,32 @@ def longestSubsequencePalindrome(a):
 
     return L[0][n - 1]
 
+# 2
+def longestSubsequencePalindrome(a):
+    n = len(a)       
+    dp = [[0 for j in range(n)] for i in range(n)]
+
+    for i in range(n):
+        dp[i][i] = 1
+
+    for i in range(1, n):
+        if a[i - 1] == a[i]:
+            dp[i - 1][i] = 2
+        else:
+            dp[i - 1][i] = 1
+
+    for L in range(3, n + 1):
+        for pos in range(1, (n - L + 1) + 1):
+            i = pos - 1
+            j = i + L - 1
+            if a[i] == a[j]:
+                dp[i][j] = dp[i + 1][j - 1] + 2
+            else:
+                dp[i][j] = max(dp[i + 1][j], dp[i][j - 1])
+                
+    return dp[0][n - 1]
+    
+    
 
 print(longestSubsequencePalindrome([1, 2, 4, 1]))
+

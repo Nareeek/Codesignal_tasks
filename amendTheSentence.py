@@ -1,3 +1,29 @@
+#1
+def amendTheSentence(s):
+    sentence = s[0].lower()
+    
+    for c in s[1:]:
+        if c.isupper():
+            sentence += " " + c.lower()                
+        else:
+            sentence += c            
+    return sentence
+
+# 2
+def amendTheSentence(s):
+    sentence = ""
+    for i,c in enumerate(s):
+        if c.isupper():
+            if i!=0:
+                sentence+=" "+c.lower()
+            else:
+                sentence+=c.lower()                  
+        else:
+            sentence+=c            
+    return sentence
+
+
+# 3
 def amendTheSentence(s):
     s = list(s);
     a = []

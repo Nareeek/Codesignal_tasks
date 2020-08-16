@@ -13,7 +13,7 @@ def almostIncreasingSequence(s):
     return False if len(s) != 0 else True
 
 
-print(almostIncreasingSequence([1, 3, 5, 4, 80, 100, 120, 140, 141, 1200, 12544, 12121211]))
+print(almostIncreasingSequence([1, 3, 5, 4, 80, 100, 120, 140, 141, 1200, 12544, 12121211, 4]))
 
 
 # 2

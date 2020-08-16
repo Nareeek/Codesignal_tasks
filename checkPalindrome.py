@@ -7,3 +7,4 @@ def checkPalindrome(inputString):
             break
 
     return isPalindrome
+

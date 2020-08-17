@@ -1,5 +1,5 @@
 def countInversions(a):
-  return mergesort(a)[1] % 1000000007
+  return mergesort(a)[1] % (1e9 + 7)
 
 def mergesort(a):
   if len(a) < 2: return a, 0

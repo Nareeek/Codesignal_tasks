@@ -1,3 +1,15 @@
+# 1
+def extractEachKth(inputArray, k):
+    o = []
+    i = 1
+    for n in inputArray:
+        if i % k:
+            o += n,
+        i += 1
+    return o
+
+
+# 2
 def extractEachKth(inputArray, k):
     nar = list(inputArray)
     for i in range(1, len(nar) // k + 1):
@@ -11,3 +23,6 @@ def extractEachKth(inputArray, k):
 
 
 print(extractEachKth([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 3))
+
+
+

@@ -8,3 +8,4 @@ def adjacentElementsProduct(inputArray):
             best = cur
 
     return best
+

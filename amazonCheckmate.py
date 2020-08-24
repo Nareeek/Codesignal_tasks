@@ -113,3 +113,4 @@ def amazonCheckmate(king, amazon):
                         print("Safe at: [" + str(x) + ", " + str(y) + "]")
                         result[3] += 1     
     return result
+

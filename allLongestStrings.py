@@ -18,3 +18,4 @@ def allLongestStrings(inputArray):
         if len(inputArray[i]) > len(answer[0]):
             answer = [inputArray[i]]
     return answer
+ 

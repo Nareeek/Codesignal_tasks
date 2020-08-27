@@ -1,3 +1,4 @@
+# 1
 def differentValuesInMultiplicationTable(n, m):
     s = set()
     
@@ -10,7 +11,6 @@ def differentValuesInMultiplicationTable(n, m):
 
 
 #2
-
 def differentValuesInMultiplicationTable(n, m):
     result = 0
     for value in range(1, n * m + 1):

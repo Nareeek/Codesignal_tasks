@@ -1,4 +1,4 @@
-def regularBracketSequence2(sequence):
+def regularBracketSequence1(sequence):
 
     stack = []
     for i in range(len(sequence)):

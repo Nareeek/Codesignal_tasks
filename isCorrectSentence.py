@@ -1,3 +1,4 @@
+# 1
 def isCorrectSentence(inputString):
 
     leadChar = inputString[0]
@@ -8,3 +9,9 @@ def isCorrectSentence(inputString):
         return True
     else:
         return False
+    
+    
+# 2
+def isCorrectSentence(inputString):
+    return all([inputString[0].isupper(), inputString[-1] == '.'])
+    

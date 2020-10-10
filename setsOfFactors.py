@@ -12,8 +12,8 @@ def setsOfFactors(n):
             #print i
             if 1 not in i:
                 i = list(i)
-                for j in xrange(len(i)):
-                    for k in xrange(2,int(round(i[j]**0.5))+1):
+                for j in range(len(i)):
+                    for k in range(2,int(round(i[j]**0.5))+1):
                         if i[j]%k == 0:
                             temp = i[:j] + i[j+1:] + [i[j]/k,k]
                             #print i,temp

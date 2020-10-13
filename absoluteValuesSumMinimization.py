@@ -30,4 +30,3 @@ def absoluteValuesSumMinimization(a):
             indexOfMinimum = i
 
     return a[indexOfMinimum]
-

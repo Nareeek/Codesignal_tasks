@@ -10,4 +10,4 @@ def leastCommonPrimeDivisor(a, b):
             b /= divisor
         divisor += 1
 
-    return -1
+    return -1 

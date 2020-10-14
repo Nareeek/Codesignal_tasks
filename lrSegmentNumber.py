@@ -1,3 +1,13 @@
+# 1
 def lrSegmentNumber(l,r):
     # 3,4,5 => 3 * 10^2 + 4 * 10^1 + 5 * 10^0
     return sum(i * 10 ** (r-i) for i in range(l,r+1)) # 2,1,0
+
+
+
+# 2
+def lrSegmentNumber(l, r):
+    a = [str(x) for x in range(l, r + 1)]
+    a = ''.join(a)
+    return int(a)
+    

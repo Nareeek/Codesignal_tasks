@@ -14,3 +14,7 @@ def addBorder(picture):
     answer.append(answer[0])
 
     return answer
+
+
+
+

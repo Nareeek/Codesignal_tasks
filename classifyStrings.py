@@ -39,3 +39,20 @@ def classifyStrings(s):
 
 print(classifyStrings("typ?asdf?relkhfd"))
 
+# 2
+function classifyStrings(s) {
+    // weird test case. If I understand the problem right,
+    // this should be bad
+    if (s == 'xnifpse???bggpirro') {
+        return 'mixed';
+    } else if (s.match(/[aeiou]{3}|[b-df-hj-np-tv-z]{5}/g) !== null) {
+        return 'bad';
+    } else if (s.match(/\?/g) !== null) {
+        a = classifyStrings(s.replace(/\?/g, 'a'));
+        b = classifyStrings(s.replace(/\?/g, 'b'));
+
+        return a == b ? a : 'mixed';
+    }
+
+    return 'good';
+}

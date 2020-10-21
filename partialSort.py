@@ -4,7 +4,6 @@ def partialSort(input, k):
 
     for i in range(k):
         index = 0
-        j = 0
         for j in range(len(input)):
             if input[j] < input[index]:
                 index = j

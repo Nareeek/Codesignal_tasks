@@ -1,51 +1,54 @@
 def integerToEnglishWords(num):
-    lookup = {0: 'Zero', 1: 'One', 2: 'Two', 3: 'Three', 4: 'Four', 5: 'Five',
-            6: 'Six', 7: 'Seven', 8: 'Eight', 9: 'Nine', 10: 'Ten',
-            11: 'Eleven', 12: 'Twelve', 13: 'Thirteen', 14: 'Fourteen',
-            15: 'Fifteen', 16: 'Sixteen', 17: 'Seventeen', 18: 'Eighteen', 19: 'Nineteen',
-            20: 'Twenty', 30: 'Thirty', 40: 'Forty', 50: 'Fifty', 60: 'Sixty',
-            70: 'Seventy', 80: 'Eighty', 90: 'Ninety'}
-    
-    if num/10 == 0:
-        return lookup[num]
-    elif num/100 == 0:
-        x = 10
-        if num in lookup.keys():
-            return lookup[num]
-        else:
-            # ans = integerToEnglishWords(num%x)
-            # if ans == 0:
-            #     return lookup[num/x*x]
-            # else:
-            return lookup[num/x*x] + ' ' + integerToEnglishWords(num%x)
-    elif num/1000 == 0:
-        x = 100
-        ans = integerToEnglishWords(num%x)
-        if ans == 'Zero':
-            return integerToEnglishWords(num/x) + ' Hundred'
-        else:
-            return integerToEnglishWords(num/x) + ' Hundred ' + ans
 
-    elif num/1000000 == 0:
-        x = 1000
-        ans = integerToEnglishWords(num%x)
-        if ans == 'Zero':
-            return integerToEnglishWords(num/x) + ' Thousand'
-        else:
-            return integerToEnglishWords(num/x) + ' Thousand ' + ans
+    num_to_English = {0:'Zero', 1:"One", 2:"Two", 3:"Three", 4:"Four", 5:"Five", 6:"Six", 7:"Seven",\
+                    8:"Eight", 9:"Nine", 10:'Ten', 11:"Eleven", 12:"Twelve", 13:"Thirteen", 14:"Fourteen",\
+                    15:"Fifteen", 16:"Sixteen", 17:"Seventeen", 18:"Eighteen", 19:"Nineteen", 20:"Twenty", \
+                    30:"Thirty", 40:"Forty", 50:"Fifty", 60:"Sixty", 70:"Seventy", 80:"Eighty", 90:"Ninety"}
 
-    elif num/1000000000 == 0:
-        x = 1000000
-        ans = integerToEnglishWords(num%x)
-        if ans == 'Zero':
-            return integerToEnglishWords(num/x) + ' Million'
+    rlt = []
+    if num == 0:
+        return "Zero"
+    cnt = 1
+    while num > 0:
+        temp = num % 1000
+        digits = temp % 10
+        decades = temp // 10 % 10
+        hundreds = temp // 100
+        two_ = temp % 100
+        temp_rlt = ""
+        if hundreds > 0:
+            temp_rlt += num_to_English[hundreds] + " " + "Hundred"
+        if decades > 0:
+            if two_ > 0 and two_ <= 19:
+                if temp_rlt:
+                    temp_rlt += " "
+                temp_rlt += num_to_English[two_]
+            elif two_ > 19:
+                if temp_rlt:
+                    temp_rlt += " "
+                temp_rlt += num_to_English[decades * 10]
+                if digits > 0:
+                    temp_rlt += " " + num_to_English[digits]
         else:
-            return integerToEnglishWords(num/x) + ' Million ' + ans
+            if digits > 0:
+                if temp_rlt:
+                    temp_rlt += " "
+                temp_rlt += num_to_English[digits]
 
-    else:
-        x = 1000000000
-        ans = integerToEnglishWords(num%x)
-        if ans == 'Zero':
-            return integerToEnglishWords(num/x) + ' Billion'
-        else:
-            return integerToEnglishWords(num/x) + ' Billion ' + ans
+        if temp_rlt:
+            if cnt == 2:
+                temp_rlt += " " + "Thousand"
+            elif cnt == 3:
+                temp_rlt += " " + "Million"
+            elif cnt == 4:
+                temp_rlt += " " + "Billion"
+            rlt.append(temp_rlt)
+        cnt += 1
+        num //= 1000
+    rlt.reverse()
+    result = ""
+    for i in rlt[:-1]:
+        result += i + " "
+    result += rlt[-1]
+    print(result)
+    return result

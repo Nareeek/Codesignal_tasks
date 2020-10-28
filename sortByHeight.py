@@ -2,7 +2,6 @@
 def sortByHeight(a):
     for i in range(len(a)):
         minIndex = -1
-        tmp = a[i]
         if a[i] == -1:
             continue
         for j in range(i, len(a)):

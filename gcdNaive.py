@@ -6,3 +6,16 @@ def gcdNaive(a, b):
             gcd = divisor
 
     return gcd
+
+
+def gcd(a, b):
+    if b == 0:
+        return a
+    
+    return gcd(b, a % b)
+
+
+a = 26
+b = 91
+
+print(gcd(a, b))

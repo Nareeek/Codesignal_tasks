@@ -1,5 +1,5 @@
 # 1
-def mergeSort(sequence):
+def mergeSort1(sequence):
     def merge(sequence, left, middle, right):
 
         result = []
@@ -71,7 +71,7 @@ def mergeStrings(s1, s2):
     return itog
 
 
-print(mergeStrings("super", "tower"))
+ # print(mergeStrings("super", "tower"))
 
 
 # 3
@@ -107,4 +107,7 @@ def mergeStrings(s1, s2):
     return t
 
 
-print(mergeStrings("ougtaleegvrabhugzyx", "wvieaqgaegbxg"))
+# print(mergeStrings("ougtaleegvrabhugzyx", "wvieaqgaegbxg"))
+print(mergeSort1([3, 6, 1, 5, 3, 6]))
+
+

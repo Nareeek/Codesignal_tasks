@@ -20,3 +20,10 @@ def adaNumber(line):
         return True
     except:
         return False
+
+
+a = []
+
+a += 4,
+a += 5,
+print(a)

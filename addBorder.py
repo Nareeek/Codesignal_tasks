@@ -15,6 +15,3 @@ def addBorder(picture):
 
     return answer
 
-
-
-

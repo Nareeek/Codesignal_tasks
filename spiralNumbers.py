@@ -17,6 +17,22 @@ print(spiralNumbers(5))
 
 
 # 2
+
+def spiralNumbers(n,m=0,s=1):
+    
+    if m==0:m=n
+    if n==1==m:
+        return [[s]]
+    
+    #Calculate spiral numbers without first row
+    S=spiralNumbers(m-1,n,s+n)
+    
+    #Create first row and add the transpose of the rest
+    return [range(s,s+n)]+zip(*S[::-1])
+
+
+
+# 3
 def direction(List, row, column, tiv, direction):
     if direction == "left_Right":
         while column < (len(List[row]) - 1):
@@ -69,3 +85,4 @@ def spiralNumbers(n):
 
 
 print(spiralNumbers(10))
+

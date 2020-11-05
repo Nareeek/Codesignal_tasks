@@ -1,3 +1,4 @@
+# 1
 def boxBlur(image):
 
   #empty array to place values within the 3x3 matrix
@@ -39,3 +40,31 @@ def boxBlur(image):
 
   #return blurred matrix
   return blurredMatrix
+
+
+
+# 2
+def boxBlur(image):
+    res = []
+    for i in range(len(image) - 2):
+        row = []
+        for j in range(len(image[0]) - 2):
+            summ = 0
+            for r in range(3):
+                for c in range(3):
+                    summ += image[i + r][j + c]
+            row.append(summ // 9)
+        res.append(row)
+    return res
+
+'''
+def boxBlur(m):
+    res = []
+    for i in range(1, len(m) - 1):
+        row = []
+        for j in range(1, len(m[0]) - 1):
+            row.append(sum([m[i + k][j + l] for k in [-1, 0, 1] for l in [-1, 0, 1]]) // 9)
+        res.append(row)
+    return res
+
+'''

@@ -1,3 +1,18 @@
+# 1
+def arrayPreviousLess(items):
+
+    result = []
+    for i in range(len(items)):
+        substitute = -1
+        for j in range(i, -1, -1):
+            if items[j] < items[i]:
+                substitute = items[j];break
+        result.append(substitute)
+
+    return result
+
+
+# 2
 def arrayPreviousLess(a):
     arr = []
     for i in range(len(a)):

@@ -8,9 +8,10 @@ def leastFactorial(n):
 
 # 2
 def leastFactorial(n):
-    t = 1
-    i = 2
-    while t < n:
-        t *= i
-        i += 1
-    return t
+
+    factorial = 1
+    k = 2
+    while factorial < n:
+        factorial *= k
+        k += 1
+    return factorial

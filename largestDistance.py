@@ -1,7 +1,7 @@
 def largestDistance(a):
 
     mx = [a[0], a[1]]
-    mn = [a[1], a[0]]
+    mn = [a[0], a[1]]
     for i in range(len(a)):
         k = i % 2
         if a[i] > mx[k]:

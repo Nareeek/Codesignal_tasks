@@ -1,3 +1,4 @@
+#1
 def additionWithoutCarrying(param1, param2):
     s = ""
 
@@ -14,6 +15,7 @@ def additionWithoutCarrying(param1, param2):
 
     return int(s)
 
+print(additionWithoutCarrying(456, 1734))
 
 
 #2

@@ -1,3 +1,4 @@
+#1
 def allLongestStrings(inputArray):
     l = len(max(inputArray, key=len))
     L = []

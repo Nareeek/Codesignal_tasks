@@ -1,3 +1,4 @@
+#1
 def absoluteValuesSumMinimization(a):
     d = {}
     sum = 0
@@ -30,3 +31,5 @@ def absoluteValuesSumMinimization(a):
             indexOfMinimum = i
 
     return a[indexOfMinimum]
+
+print(absoluteValuesSumMinimization([2, 4, 7]))
